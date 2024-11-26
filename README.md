@@ -29,4 +29,13 @@ cabal install --only-dependencies
 cabal configure
 cabal build
 ```
-
+## 추천하는 GHC 버전 8.8.4
+ - 요구하는 base 라이브러리의 버전 범위(>=4.5 && <4.14)
+ - GHC 8.8.4에서 4.13 base 라이브러리 사용
+   
+```
+ghcup install ghc 8.8.4
+ghcup set ghc 8.8.4
+cabal clean
+cabal build
+```
